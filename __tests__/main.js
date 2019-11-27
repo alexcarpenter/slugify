@@ -1,6 +1,13 @@
 const slugify = require('..');
 
 describe('slugify', () => {
+  test('does not mutate the original string value', () => {
+    const str = 'foo bar';
+    const slg = slugify(str);
+    expect(str).toBe('foo bar');
+    expect(slg).toBe('foo-bar');
+  });
+
   test('camelcase strings', () => {
     expect(slugify('fooBar')).toBe('foo-bar');
     expect(slugify('FooBar')).toBe('foo-bar');
