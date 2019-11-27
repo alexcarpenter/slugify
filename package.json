@@ -1,6 +1,6 @@
 {
   "name": "@alexcarpenter/slugify",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "dist/slugify.cjs.js",
   "module": "dist/slugify.esm.js",
   "browser": "dist/slugify.umd.js",
