@@ -7,7 +7,7 @@ const splitCamelcase = compose(
   replace(/([A-Z]+)([A-Z][a-z\d]+)/g, '$1 $2'),
   replace(/([a-z\d])([A-Z])/g, '$1 $2'),
 );
-const replaceDiacritcs = deburr;
+const replaceDiacritics = deburr;
 const removeSpecialChars = replace(/[^\w\s]/gi, '');
 const splitOnSpecialChars = replace(/&|-|_|\./g, ' ');
 const splitOnSpace = split(' ');
@@ -19,7 +19,7 @@ const slugify = compose(
   splitOnSpace,
   removeSpecialChars,
   splitOnSpecialChars,
-  replaceDiacritcs,
+  replaceDiacritics,
   toLowerCase,
   splitCamelcase,
   trimOuterSpace,

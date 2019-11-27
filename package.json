@@ -1,6 +1,6 @@
 {
   "name": "@alexcarpenter/slugify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/slugify.cjs.js",
   "module": "dist/slugify.esm.js",
   "browser": "dist/slugify.umd.js",
@@ -18,7 +18,8 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "publish": "npm publish --access public"
   },
   "files": [
     "dist"
