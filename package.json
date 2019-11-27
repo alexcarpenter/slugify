@@ -1,9 +1,12 @@
 {
   "name": "@alexcarpenter/slugify",
+  "description": "Convert a string into a slug",
   "version": "1.0.6",
   "main": "dist/slugify.cjs.js",
   "module": "dist/slugify.esm.js",
   "browser": "dist/slugify.umd.js",
+  "author": "Alex Carpenter <im.alexcarpenter@gmail.com> (https://alexcarpenter.me/)",
+  "license": "MIT",
   "dependencies": {
     "lodash.deburr": "^4.1.0",
     "ms": "^2.0.0"
@@ -24,7 +27,6 @@
   "files": [
     "dist"
   ],
-  "description": "> Convert a string into a slug",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexcarpenter/slugify.git"
@@ -35,8 +37,6 @@
     "compose",
     "point-free"
   ],
-  "author": "im.alexcarpenter@gmail.com",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/alexcarpenter/slugify/issues"
   },
